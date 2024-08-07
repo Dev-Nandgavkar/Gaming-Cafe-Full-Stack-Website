@@ -1,0 +1,89 @@
+.h_main{
+    height: 75px;
+    width: 100%;
+    display: table;
+    background-color: white;
+}
+
+.p40{
+    width: 40px;
+}
+
+.left{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.left-conatianer{
+    display: inline-block;
+}
+
+.Title-Logo{
+    display: inline-block;
+    font-size: 26px;
+    font-style: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-right: 30px;
+}
+
+.N1{
+    color: #CC0000;
+}
+.N2{
+    color: #333333;
+}
+
+.mid{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.right{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.r-container{
+    display: table;
+    text-align: right;
+    width: auto;
+    position: relative;
+    float: right;
+}
+
+.head_Contact{
+    padding-left: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.rigth_btn{
+    padding-left: 30px;
+    padding-right: 40px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.speak-btn{
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+    padding-left: 28px;
+    padding-right: 28px;
+    height: 40px;
+    width: 150px;;
+    border-radius: 30px;
+    border: none;
+    background-color: #CC0000;
+    color: white;
+    cursor: pointer;
+}
