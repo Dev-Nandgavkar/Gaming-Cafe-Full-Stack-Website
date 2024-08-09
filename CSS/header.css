@@ -1,7 +1,7 @@
 .h_main{
     height: 75px;
     width: 100%;
-    display: table;
+    display: flex;
     background-color: white;
 }
 
@@ -10,7 +10,9 @@
 }
 
 .left{
-    display: table-cell;
+    display: flex;
+    flex: 1;
+    align-items: center;
     vertical-align: middle;
 }
 
@@ -25,7 +27,6 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     white-space: nowrap;
-    padding-right: 30px;
 }
 
 .N1{
@@ -36,13 +37,93 @@
 }
 
 .mid{
-    display: table-cell;
+    display: flex;
+    flex: 2;
+    align-items: center;
     vertical-align: middle;
     width: 100%;
+    text-align: left;
+}
+
+.head-nav-list{
+    margin: 0;
+    padding-left: 0;
+    padding-top: 5px;
+}
+
+.head-list-items:first-child{
+    padding-left: 0;
+}
+
+.head-list-items{
+    clear: both;
+    font-family: Jost;
+    font-size: 16px;
+    display: inline-block;
+    padding-right: 15px;
+    margin: 0;
+    color: #000;
+    white-space: nowrap;
+    text-align: none;
+}
+
+.link-items{
+    position: relative;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.link-items:hover{
+    border-bottom: 2px solid #333333;
+}
+
+.dropdown-arrow {
+    height: 0;
+    width: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    position: relative;
+    top: -12px;
+    left: 50px;
+}
+  
+/* ul li:hover .dropdown-arrow {
+    top: -17px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #333;
+    border-top: 5px solid transparent;
+} */
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    width: 100px;
+    height: 110px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: -50px;
+    background: beige;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background: white;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
 }
 
 .right{
-    display: table-cell;
+    display: flex;
+    flex: 1;
     vertical-align: middle;
     text-align: right;
 }
