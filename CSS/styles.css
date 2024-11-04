@@ -144,11 +144,74 @@ header.sticky ul{
     height: 100%;
 }
 
+.swiper-inner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+}
+
 .swiper-inner .con_data{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
+
+.h_blink{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    padding: 0 15px 2px 15px;
+    border-radius: 30px;
+    padding-left: 35px;
+}
+
+.h_blink::before{
+    animation: blinkingtext 1s infinite;
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: var(--primary-color);
+    border-radius: 20px;
+    top: 7.5px;
+    left: 10px;
+    box-shadow: 0 0 10px 0 rgba(var(--primary-color), 1);
+}
+
+@keyframes blinkingtext {
+    0%{
+        background: var(--primary-color);
+    }
+    50%{
+        background: rgba(255, 255, 255, 1.0);
+    }
+    100%{
+        background: var(--primary-color);
+    }
+}
+
+.con_data h1{
+    font-size: 71px;
+    line-height: 1.1em;
+    color: #fff;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    background: linear-gradient(0deg, #888888 0%, #fff 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* 1:02:56 */
+
+
 
 
 
